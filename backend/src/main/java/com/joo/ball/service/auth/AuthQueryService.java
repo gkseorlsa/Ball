@@ -5,6 +5,7 @@ import com.joo.ball.entity.User;
 import com.joo.ball.repository.UserRepository;
 import com.joo.ball.util.exception.auth.InvalidPasswordException;
 import com.joo.ball.util.exception.auth.InvalidUsernameException;
+import com.joo.ball.util.security.JwtUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
