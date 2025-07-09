@@ -1,15 +1,8 @@
 package com.joo.ball.dto.auth.request;
 
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
+public record SignUpRequest(String username, String password) {
 
-@Getter
-@Builder
-@AllArgsConstructor(access = AccessLevel.PRIVATE)
-public class SignUpRequest {
-
-    private String username;
-    private String password;
+    public static SignUpRequest of(String username, String password){
+        return new SignUpRequest(username, password);
+    }
 }
